@@ -263,16 +263,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxb-w7-43L">
-                                <rect key="frame" x="82" y="172" width="58" height="32"/>
+                                <rect key="frame" x="55" y="172" width="113" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <menu key="menu" id="1rv-Lo-4Qg">
+                                <menu key="menu" title="Looking for" id="1rv-Lo-4Qg">
                                     <children>
-                                        <command title="Item 1" id="wfw-Xb-d0b"/>
-                                        <command title="Item 2" id="1pI-fb-TKz"/>
+                                        <command title="Breakfast" id="wfw-Xb-d0b"/>
+                                        <command title="Lunch" id="1pI-fb-TKz"/>
+                                        <command title="Dinner" id="Qlk-ol-F4V" userLabel="Dinner"/>
+                                        <command title="Snacks" id="Png-WT-M95" userLabel="Snacks"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Recipes"/>
+                                <state key="normal" title="Search Recipes"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sZf-Kn-Oe6"/>
