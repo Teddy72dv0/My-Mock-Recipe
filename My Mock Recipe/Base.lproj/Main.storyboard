@@ -325,7 +325,7 @@
             <objects>
                 <viewController storyboardIdentifier="MenuVC" title="MenuVC" id="Rlr-pL-xEm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gui-0m-n21" colorLabel="IBBuiltInLabel-Green">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Recipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afv-H1-IHk">
@@ -341,7 +341,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0E-AE-s1C">
-                                <rect key="frame" x="0.0" y="204" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="258" width="414" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
@@ -355,7 +355,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o3d-pv-7RV">
-                                        <rect key="frame" x="8" y="8" width="398" height="875"/>
+                                        <rect key="frame" x="8" y="8" width="398" height="1125"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLj-bW-chj">
                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="375"/>
@@ -368,15 +368,26 @@
                                                     <segue destination="mw4-gc-L84" kind="modal" id="JZr-0M-cgd"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_Apple Caramel Pie" translatesAutoresizingMaskIntoConstraints="NO" id="b7o-jF-u4I">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIx-FO-xw2">
                                                 <rect key="frame" x="0.0" y="375" width="398" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="l1z-cr-DNH"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Img_Apple Caramel Pie" imagePlacement="top" subtitle="Apple Caramel Pie" titleAlignment="center">
+                                                    <fontDescription key="subtitleFontDescription" type="italicSystem" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_Apple Caramel Pie" translatesAutoresizingMaskIntoConstraints="NO" id="b7o-jF-u4I">
+                                                <rect key="frame" x="0.0" y="625" width="398" height="250"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="5oP-W5-t8m"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_The Ultimate S’mores Cake" translatesAutoresizingMaskIntoConstraints="NO" id="0Gl-bK-Gzl">
-                                                <rect key="frame" x="0.0" y="625" width="398" height="250"/>
+                                                <rect key="frame" x="0.0" y="875" width="398" height="250"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="i4p-xa-8KQ"/>
@@ -399,6 +410,7 @@
                         <viewLayoutGuide key="safeArea" id="sZf-Kn-Oe6"/>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yl7-wT-ITL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bm-qU-b2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -413,14 +425,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Recipe_Thanksgiving Focaccia by Tasty" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6z0-h8-h0M">
-                                <rect key="frame" x="40" y="138" width="374" height="620"/>
+                                <rect key="frame" x="40" y="63" width="374" height="620"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.34999999999999998" y="0.0" width="1" height="1"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Info_Sesame Pork Milanese" translatesAutoresizingMaskIntoConstraints="NO" id="OsU-3F-MJF">
+                                <rect key="frame" x="71" y="643" width="273" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O7X-jv-eE6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Back To Recipe List" id="4Gd-tH-Aoj">
+                            <connections>
+                                <segue destination="Rlr-pL-xEm" kind="show" id="5jO-Ya-JC4"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Back To Recipe List" prompt="Go Back To List" id="0ZU-4x-cIF"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpg-jz-tXn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -487,12 +512,14 @@
     <inferredMetricsTieBreakers>
         <segue reference="lIu-Nd-UEG"/>
         <segue reference="QyU-nF-ltM"/>
+        <segue reference="5jO-Ya-JC4"/>
         <segue reference="0aI-Qh-TEZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Img_Apple Caramel Pie" width="1000" height="563"/>
         <image name="Img_Thanksgiving Focaccia" width="600" height="337"/>
         <image name="Img_The Ultimate S’mores Cake" width="1000" height="563"/>
+        <image name="Info_Sesame Pork Milanese" width="696" height="266"/>
         <image name="Recipe_Thanksgiving Focaccia by Tasty" width="792" height="1224"/>
         <image name="alina-chernysheva-qfLesC7ElEY-unsplash" width="3024" height="4032"/>
         <image name="farhad-ibrahimzade-KpOl9jV2aJM-unsplash" width="3444" height="2804"/>
